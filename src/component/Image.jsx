@@ -1,6 +1,14 @@
 import * as React from 'react';
 import ImageList from '@mui/material/ImageList';
 import ImageListItem from '@mui/material/ImageListItem';
+import fem1 from '../assets/fe/fem1.jpg'
+import fem2 from '../assets/fe/fem2.jpg'
+import fem3 from '../assets/fe/fem3.jpg'
+import fem4 from '../assets/fe/fem4.jpg'
+import fem5 from '../assets/fe/fem5.jpg'
+import fem6 from '../assets/fe/fem6.jpg'
+import fem7 from '../assets/fe/fem7.jpg'
+import fem8 from '../assets/fe/fem8.jpg'
 
 function srcset(image, size, rows = 1, cols = 1) {
   return {
@@ -14,10 +22,11 @@ function srcset(image, size, rows = 1, cols = 1) {
 export default function QuiltedImageList() {
   return (
     <ImageList
-      sx={{ width: 200, height: 450, marginLeft:1 }}
+      sx={{ width: 700, height: 450, marginLeft:1 }}
       variant="quilted"
       cols={4}
       rowHeight={121}
+      flexWrap= 'wrap'
     >
       {itemData.map((item) => (
         <ImageListItem key={item.img} cols={item.cols || 1} rows={item.rows || 1}>
