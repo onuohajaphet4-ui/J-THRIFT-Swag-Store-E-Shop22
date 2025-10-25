@@ -161,7 +161,7 @@ const RegistrationScreen = () => {
           <Typography variant="body2" sx={{ mt: 3, textAlign: "center" }}>
             Already have an account?{" "}
             <a
-              href="/login"
+              href="/Home"
               style={{
                 color: "#1976d2",
                 fontWeight: 600,
